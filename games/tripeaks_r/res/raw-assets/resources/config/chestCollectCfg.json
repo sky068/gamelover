@@ -1,0 +1,222 @@
+{
+  "chestStar" : {
+    "needStar" : 10,
+    "props" : [
+      [
+        {
+          "maxNum" : 3,
+          "weight" : 1,
+          "propId" : 6,
+          "minNum" : 1,
+          "tip": "免费关卡"
+        },
+        {
+          "maxNum" : 3,
+          "weight" : 1,
+          "propId" : 7,
+          "minNum" : 1,
+          "tip": "自动提示"
+        }
+      ],
+      [
+        {
+          "weight": 1,
+          "props":[
+            {
+              "maxNum" : 1,
+              "weight" : 1,
+              "propId" : 1,
+              "minNum" : 0,
+              "tip": "连续消除(万能牌)"
+            },
+            {
+              "maxNum" : 1,
+              "weight" : 1,
+              "propId" : 2,
+              "minNum" : 0,
+              "tip": "清除花色"
+            },
+            {
+              "maxNum" : 1,
+              "weight" : 1,
+              "propId" : 3,
+              "minNum" : 0,
+              "tip": "随机清除"
+            }
+          ]
+        },
+
+        {
+           "weight": 1,
+           "props":[
+             {
+               "maxNum" : 1,
+               "weight" : 1,
+               "propId" : 4,
+               "minNum" : 0,
+               "tip": "增加手牌"
+             },
+             {
+               "maxNum" : 1,
+               "weight" : 1,
+               "propId" : 5,
+               "minNum" : 0,
+               "tip": "增加时间"
+             }
+           ]
+        }
+      ]
+    ],
+    "minCoins" : 1000,
+    "maxCoins" : 2000
+  },
+  "chestShort" : {
+    "props" : [
+      [
+        {
+          "maxNum" : 1,
+          "weight" : 1,
+          "propId" : 6,
+          "minNum" : 0,
+          "tip": "免费关卡"
+        },
+        {
+          "maxNum" : 1,
+          "weight" : 1,
+          "propId" : 7,
+          "minNum" : 0,
+          "tip": "自动提示"
+        },
+        {
+          "weight": 1,
+          "propId": -1,
+          "maxNum": 0,
+          "minNum": 0,
+          "tip": "表示空，不奖励"
+        }
+      ],
+      [
+        {
+            "weight": 1,
+             "props":[
+               {
+                 "maxNum" : 1,
+                 "weight" : 1,
+                 "propId" : 2,
+                 "minNum" : 0,
+                 "tip": "清除花色"
+               },
+               {
+                 "maxNum" : 1,
+                 "weight" : 1,
+                 "propId" : 3,
+                 "minNum" : 0,
+                 "tip": "随机清除"
+               }
+             ]
+        },
+        {
+            "weight": 1,
+            "props": [
+              {
+                "maxNum" : 1,
+                "weight" : 1,
+                "propId" : 4,
+                "minNum" : 0,
+                "tip": "增加手牌"
+              },
+              {
+                "maxNum" : 1,
+                "weight" : 1,
+                "propId" : 5,
+                "minNum" : 0,
+                "tip": "增加时间"
+              }
+            ]
+        },
+        {
+          "weight": 1,
+          "propId": -1,
+          "maxNum": 0,
+          "minNum": 0,
+          "tip": "表示空，不奖励"
+        }
+      ]
+
+    ],
+    "minCoins" : 10,
+    "timeNeed" : 1800,
+    "maxCoins" : 500,
+    "price": 18000
+  },
+  "chestLong" : {
+    "props" : [
+      [
+        {
+          "maxNum" : 3,
+          "weight" : 1,
+          "propId" : 6,
+          "minNum" : 1,
+          "tip": "免费关卡"
+        },
+        {
+          "maxNum" : 3,
+          "weight" : 1,
+          "propId" : 7,
+          "minNum" : 1,
+          "tip": "自动提示"
+        },
+        {
+          "weight": 1,
+          "propId": -1,
+          "maxNum": 0,
+          "minNum": 0,
+          "tip": "表示空，不奖励"
+        }
+      ],
+      [
+        {
+          "maxNum" : 1,
+          "weight" : 1,
+          "propId" : 1,
+          "minNum" : 0,
+          "tip": "连续消除(万能牌)"
+        },
+        {
+          "maxNum" : 1,
+          "weight" : 1,
+          "propId" : 2,
+          "minNum" : 0,
+          "tip": "清除花色"
+        },
+        {
+          "maxNum" : 3,
+          "weight" : 1,
+          "propId" : 3,
+          "minNum" : 1,
+          "tip": "随机清除"
+        }
+      ],
+      [
+        {
+          "maxNum" : 1,
+          "weight" : 1,
+          "propId" : 4,
+          "minNum" : 0,
+          "tip": "增加手牌"
+        },
+        {
+          "maxNum" : 1,
+          "weight" : 1,
+          "propId" : 5,
+          "minNum" : 0,
+          "tip": "增加时间"
+        }
+      ]
+    ],
+    "minCoins" : 10,
+    "timeNeed" : 86400,
+    "maxCoins" : 2000,
+    "price": 58000
+  }
+}

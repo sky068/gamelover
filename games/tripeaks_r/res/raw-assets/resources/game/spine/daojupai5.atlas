@@ -1,0 +1,69 @@
+
+daojupai5.png
+size: 512,515
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bxguangxiaomini
+  rotate: false
+  xy: 300, 303
+  size: 210, 210
+  orig: 210, 210
+  offset: 0, 0
+  index: -1
+daojupai5waifaguang
+  rotate: false
+  xy: 113, 7
+  size: 77, 104
+  orig: 77, 104
+  offset: 0, 0
+  index: -1
+guang
+  rotate: false
+  xy: 300, 10
+  size: 210, 137
+  orig: 210, 137
+  offset: 0, 0
+  index: -1
+nengliqiu
+  rotate: false
+  xy: 2, 2
+  size: 109, 109
+  orig: 109, 109
+  offset: 0, 0
+  index: -1
+paimian
+  rotate: false
+  xy: 2, 113
+  size: 296, 400
+  orig: 296, 400
+  offset: 0, 0
+  index: -1
+shalou
+  rotate: true
+  xy: 300, 149
+  size: 152, 197
+  orig: 152, 197
+  offset: 0, 0
+  index: -1
+shazi1
+  rotate: false
+  xy: 192, 82
+  size: 78, 29
+  orig: 78, 29
+  offset: 0, 0
+  index: -1
+shazi2
+  rotate: false
+  xy: 192, 43
+  size: 33, 37
+  orig: 33, 37
+  offset: 0, 0
+  index: -1
+shazi3
+  rotate: false
+  xy: 192, 10
+  size: 13, 31
+  orig: 13, 31
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,97 @@
+
+daojupai2.png
+size: 964,436
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+daojupai_02
+  rotate: false
+  xy: 2, 24
+  size: 300, 410
+  orig: 300, 410
+  offset: 0, 0
+  index: -1
+icon_ig_daojupai_02_01
+  rotate: false
+  xy: 472, 274
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+icon_ig_daojupai_02_02
+  rotate: false
+  xy: 478, 112
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+icon_ig_daojupai_02_03
+  rotate: false
+  xy: 634, 274
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+icon_ig_daojupai_02_04
+  rotate: false
+  xy: 796, 274
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+icon_ig_daojupai_02_05
+  rotate: false
+  xy: 640, 112
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+nengliqiu
+  rotate: false
+  xy: 478, 2
+  size: 108, 108
+  orig: 108, 108
+  offset: 0, 0
+  index: -1
+paibiansaoguang1
+  rotate: true
+  xy: 588, 24
+  size: 86, 61
+  orig: 86, 61
+  offset: 0, 0
+  index: -1
+paibiansaoguang2
+  rotate: false
+  xy: 802, 138
+  size: 160, 134
+  orig: 160, 134
+  offset: 0, 0
+  index: -1
+paibiansaoguang3
+  rotate: false
+  xy: 304, 228
+  size: 166, 206
+  orig: 166, 206
+  offset: 0, 0
+  index: -1
+paibiansaoguang4
+  rotate: false
+  xy: 304, 21
+  size: 172, 205
+  orig: 172, 205
+  offset: 0, 0
+  index: -1
+paibiansaoguang5
+  rotate: false
+  xy: 802, 13
+  size: 160, 123
+  orig: 160, 123
+  offset: 0, 0
+  index: -1
+paibiansaoguang6
+  rotate: true
+  xy: 651, 42
+  size: 68, 48
+  orig: 68, 48
+  offset: 0, 0
+  index: -1

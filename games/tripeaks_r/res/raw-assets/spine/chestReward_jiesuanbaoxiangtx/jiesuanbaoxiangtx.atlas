@@ -1,0 +1,69 @@
+
+jiesuanbaoxiangtx.png
+size: 1005,779
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guangqiu
+  rotate: true
+  xy: 422, 2
+  size: 230, 172
+  orig: 230, 172
+  offset: 0, 0
+  index: -1
+jiesuanbaoxiang_di
+  rotate: true
+  xy: 790, 234
+  size: 328, 199
+  orig: 328, 199
+  offset: 0, 0
+  index: -1
+jiesuanbaoxiang_gai1
+  rotate: true
+  xy: 179, 8
+  size: 340, 241
+  orig: 340, 241
+  offset: 0, 0
+  index: -1
+jiesuanbaoxiang_gai2
+  rotate: true
+  xy: 2, 7
+  size: 341, 175
+  orig: 341, 175
+  offset: 0, 0
+  index: -1
+jiesuanbaoxiang_gai3
+  rotate: true
+  xy: 596, 24
+  size: 331, 192
+  orig: 331, 192
+  offset: 0, 0
+  index: -1
+jiesuanbaoxiang_quan
+  rotate: false
+  xy: 790, 564
+  size: 213, 213
+  orig: 213, 213
+  offset: 0, 0
+  index: -1
+saog2
+  rotate: true
+  xy: 422, 298
+  size: 57, 43
+  orig: 57, 43
+  offset: 0, 0
+  index: -1
+shine
+  rotate: true
+  xy: 2, 350
+  size: 427, 364
+  orig: 427, 364
+  offset: 0, 0
+  index: -1
+te_bxguangxiao_01
+  rotate: false
+  xy: 368, 357
+  size: 420, 420
+  orig: 420, 420
+  offset: 0, 0
+  index: -1

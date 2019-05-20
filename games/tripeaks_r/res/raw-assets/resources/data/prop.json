@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Wild",
+        "desc": "Remove any card from the table.",
+        "maxNum": 20
+    },
+    {
+        "id": 2,
+        "name": "Mage",
+        "desc": "Remove all of same suit cards that are facing up.",
+        "maxNum": 5
+    },
+    {
+        "id": 3,
+        "name": "Flash",
+        "desc": "Remove 3 random cards from the table.",
+        "maxNum": 5
+    },
+    {
+        "id": 4,
+        "name": "Angle",
+        "desc": "Adds 3 more cards to the stock pile.",
+        "maxNum": 10
+    },
+    {
+        "id": 5,
+        "name": "Hourglass",
+        "desc": "Plus 30 seconds to the Star timer.",
+        "maxNum": 20
+    },
+    {
+        "id": 6,
+        "name": "Free Play Stone",
+        "desc": "Start playing game for free.",
+        "maxNum": 10
+    },
+    {
+        "id": 7,
+        "name": "Magic Eye",
+        "desc": "Highlights all playable cards.",
+        "maxNum": 10
+    }
+]

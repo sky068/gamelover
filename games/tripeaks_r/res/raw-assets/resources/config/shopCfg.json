@@ -1,0 +1,56 @@
+{
+    "propRefreshInterval": 21600,
+    "props":[
+        {
+            "id":1,
+            "propId":1,
+            "count":1,
+            "weight":1,
+            "price":7500,
+            "maxNum": 3,
+            "minNum": 1,
+            "tip": "万能牌"
+        },
+        {
+            "id":2,
+            "propId":2,
+            "count":1,
+            "weight":1,
+            "price":9000,
+            "maxNum": 3,
+            "minNum": 1,
+            "tip": "清楚花色"
+        },
+        {
+            "id":3,
+            "propId":3,
+            "count":1,
+            "weight":1,
+            "price":10000,
+            "maxNum": 3,
+            "minNum": 1,
+            "tip": "随机清楚"
+        },
+        {
+            "id":5,
+            "propId":5,
+            "count":1,
+            "weight":1,
+            "price":6000,
+            "maxNum": 3,
+            "minNum": 1,
+            "tip": "增加时间"
+        },
+
+        {
+            "id":7,
+            "propId":7,
+            "count":1,
+            "weight":1,
+            "price":4000,
+            "maxNum": 3,
+            "minNum": 1,
+            "tip": "自动提示"
+        }
+    ]
+}
