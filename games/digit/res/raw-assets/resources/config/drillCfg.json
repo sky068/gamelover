@@ -1,0 +1,12 @@
+[
+  {"level":"1","atk":"50","oilCost":"20","upCost":"100"},
+  {"level":"2","atk":"58","oilCost":"22","upCost":"100"},
+  {"level":"3","atk":"66","oilCost":"23","upCost":"450"},
+  {"level":"4","atk":"74","oilCost":"24","upCost":"1000"},
+  {"level":"5","atk":"82","oilCost":"25","upCost":"2500"},
+  {"level":"6","atk":"90","oilCost":"26","upCost":"5000"},
+  {"level":"7","atk":"98","oilCost":"27","upCost":"7500"},
+  {"level":"8","atk":"106","oilCost":"28","upCost":"10000"},
+  {"level":"9","atk":"114","oilCost":"29","upCost":"12000"},
+  {"level":"10","atk":"122","oilCost":"30","upCost":"15000"}
+]

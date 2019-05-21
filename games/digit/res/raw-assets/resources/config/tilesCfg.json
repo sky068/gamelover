@@ -1,0 +1,13 @@
+[
+  {"name":"草皮","type":"1","hp":"10","reward":"0","tmpDegree":"0"},
+  {"name":"土壤","type":"2","hp":"30","reward":"2","tmpDegree":"0"},
+  {"name":"砂石","type":"7","hp":"50","reward":"5","tmpDegree":"0"},
+  {"name":"岩石","type":"3","hp":"60","reward":"5","tmpDegree":"0"},
+  {"name":"铁矿石","type":"9","hp":"75","reward":"15","tmpDegree":"0"},
+  {"name":"铜矿石","type":"11","hp":"75","reward":"25","tmpDegree":"0"},
+  {"name":"银矿石","type":"10","hp":"80","reward":"50","tmpDegree":"0"},
+  {"name":"金矿石","type":"8","hp":"100","reward":"100","tmpDegree":"0"},
+  {"name":"化石","type":"4","hp":"90","reward":"200","tmpDegree":"0"},
+  {"name":"地下水","type":"5","hp":"25","reward":"0","tmpDegree":"-50"},
+  {"name":"岩浆","type":"6","hp":"25","reward":"0","tmpDegree":"30"}
+]
