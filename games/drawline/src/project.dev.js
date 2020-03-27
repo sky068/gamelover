@@ -30,7 +30,7 @@ window.__require = function e(t, n, r) {
     cc._RF.push(module, "213d3rVkKFHLaiH2RxUhqwv", "AnswerCardCtrl");
     "use strict";
     cc.Class({
-      extends: cc.Component,
+      extends: require("./CardBase"),
       properties: {
         contentLabel: cc.Label,
         content: {
@@ -39,6 +39,24 @@ window.__require = function e(t, n, r) {
             this.contentLabel.string = this.content;
           }
         }
+      },
+      init: function init(type, con) {
+        this.ctype = type;
+        this.content = con;
+      }
+    });
+    cc._RF.pop();
+  }, {
+    "./CardBase": "CardBase"
+  } ],
+  CardBase: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "31aeaGI0IFBH7Lo2PWMExZX", "CardBase");
+    "use strict";
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        ctype: -1
       }
     });
     cc._RF.pop();
@@ -68,7 +86,6 @@ window.__require = function e(t, n, r) {
       extends: cc.Component,
       properties: {
         linePF: cc.Prefab,
-        graphics: cc.Graphics,
         qCards: [ cc.Node ],
         aCards: [ cc.Node ]
       },
@@ -81,8 +98,8 @@ window.__require = function e(t, n, r) {
         this.init();
       },
       init: function init() {
-        for (var i = 0; i < this.qCards.length; i++) this.qCards[i].getComponent(QuestionCardCtrl).answer = questions[i].answer;
-        for (var _i = 0; _i < this.aCards.length; _i++) this.aCards[_i].getComponent(AnswerCardCtrl).content = answers[_i];
+        for (var i = 0; i < this.qCards.length; i++) this.qCards[i].getComponent(QuestionCardCtrl).init(1, questions[i].url, questions[i].answer);
+        for (var _i = 0; _i < this.aCards.length; _i++) this.aCards[_i].getComponent(AnswerCardCtrl).init(2, answers[_i]);
         this.startCard = null;
         this.lines = [];
       },
@@ -100,16 +117,24 @@ window.__require = function e(t, n, r) {
       },
       touchStart: function touchStart(event) {
         var point = event.getLocation();
-        var card = this._getTouchedCard(this.qCards, point);
+        var card = this._getTouchedCard(this.qCards.concat(this.aCards), point);
         this.startCard = card || null;
       },
       touchMove: function touchMove(event) {},
       touchEnd: function touchEnd(event) {
         var _this = this;
         var point = event.getLocation();
-        var endCard = this._getTouchedCard(this.aCards, point);
+        var endCard = this._getTouchedCard(this.aCards.concat(this.qCards), point);
         if (this.startCard && endCard) {
           cc.log("\u5212\u7ebf\u5f00\u59cb");
+          var startCardType = this.startCard.getComponent("CardBase").ctype;
+          var endCardType = endCard.getComponent("CardBase").ctype;
+          if (this.startCard == endCard || startCardType == endCardType) return;
+          if (2 == startCardType) {
+            var tmp = endCard;
+            endCard = this.startCard;
+            this.startCard = tmp;
+          }
           if (this.startCard.line && cc.isValid(this.startCard.line, true)) {
             this._rmEleInArr(this.lines, this.startCard.line);
             this.startCard.line.destroy();
@@ -232,7 +257,7 @@ window.__require = function e(t, n, r) {
     cc._RF.push(module, "0c48d9ShadGy75oj/0FMrJ0", "QuestionCardCtrl");
     "use strict";
     cc.Class({
-      extends: cc.Component,
+      extends: require("./CardBase"),
       properties: {
         url: {
           default: "",
@@ -242,9 +267,15 @@ window.__require = function e(t, n, r) {
         },
         answer: ""
       },
-      start: function start() {},
+      init: function init(type, url, aw) {
+        this.ctype = type;
+        this.url = url;
+        this.answer = aw;
+      },
       updateUI: function updateUI() {}
     });
     cc._RF.pop();
-  }, {} ]
-}, {}, [ "AnswerCardCtrl", "Game", "LineCtrl.js", "QuestionCardCtrl" ]);
+  }, {
+    "./CardBase": "CardBase"
+  } ]
+}, {}, [ "AnswerCardCtrl", "CardBase", "Game", "LineCtrl.js", "QuestionCardCtrl" ]);
