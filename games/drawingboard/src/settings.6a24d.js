@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-desktop",groupList:["default","drawNode"],collisionMatrix:[[true],[false,false]],hasResourcesBundle:false,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/Scene/game.fire",orientation:"",jsList:[],bundleVers:{internal:"fbb78",main:"64bd8"}};
