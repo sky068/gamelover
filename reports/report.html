@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0078)http://www.bmtbj.cn/clientcenter/Report/New/JNFM/TmV3X0pOMjAyMEZNMDA1MA==.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><script type="text/javascript">
+    var spector;
+    var captureOnLoad = false;
+    var captureOffScreen = false;
+    window.__SPECTOR_Canvases = [];
+
+    (function() {
+        var __SPECTOR_Origin_EXTENSION_GetContext = HTMLCanvasElement.prototype.getContext;
+        HTMLCanvasElement.prototype.__SPECTOR_Origin_EXTENSION_GetContext = __SPECTOR_Origin_EXTENSION_GetContext;
+
+        if (typeof OffscreenCanvas !== 'undefined') {
+            var __SPECTOR_Origin_EXTENSION_OffscreenGetContext = OffscreenCanvas.prototype.getContext;
+            OffscreenCanvas.prototype.__SPECTOR_Origin_EXTENSION_OffscreenGetContext = __SPECTOR_Origin_EXTENSION_OffscreenGetContext;
+
+            OffscreenCanvas.prototype.getContext = function () {
+                var context = null;
+                if (!arguments.length) {
+                    return context;
+                }
+    
+                if (arguments.length === 1) {
+                    context = this.__SPECTOR_Origin_EXTENSION_OffscreenGetContext(arguments[0]);
+                    if (context === null) {
+                        return context;
+                    }
+                }
+                else if (arguments.length === 2) {
+                    context = this.__SPECTOR_Origin_EXTENSION_OffscreenGetContext(arguments[0], arguments[1]);
+                    if (context === null) {
+                        return context;
+                    }
+                }
+    
+                var contextNames = ["webgl", "experimental-webgl", "webgl2", "experimental-webgl2"];
+                if (contextNames.indexOf(arguments[0]) !== -1) {
+                    // context.canvas.setAttribute("__spector_context_type", arguments[0]);
+                    // Notify the page a canvas is available.
+                    var myEvent = new CustomEvent("SpectorWebGLCanvasAvailableEvent");
+                    document.dispatchEvent(myEvent);
+                    this.id = "Offscreen";
+                    window.__SPECTOR_Canvases.push(this);
+    
+                    if (captureOnLoad) {
+                        // Ensures canvas is in the dom to capture the one we are currently tracking.
+                        if (false) {
+                            spector.captureContext(context, 500, false, false);
+                            captureOnLoad = false;
+                        }
+                    }
+                }
+    
+                return context;
+            }
+        }
+
+        HTMLCanvasElement.prototype.getContext = function () {
+            var context = null;
+            if (!arguments.length) {
+                return context;
+            }
+
+            if (arguments.length === 1) {
+                context = this.__SPECTOR_Origin_EXTENSION_GetContext(arguments[0]);
+                if (context === null) {
+                    return context;
+                }
+            }
+            else if (arguments.length === 2) {
+                context = this.__SPECTOR_Origin_EXTENSION_GetContext(arguments[0], arguments[1]);
+                if (context === null) {
+                    return context;
+                }
+            }
+
+            var contextNames = ["webgl", "experimental-webgl", "webgl2", "experimental-webgl2"];
+            if (contextNames.indexOf(arguments[0]) !== -1) {
+                context.canvas.setAttribute("__spector_context_type", arguments[0]);
+                // Notify the page a canvas is available.
+                var myEvent = new CustomEvent("SpectorWebGLCanvasAvailableEvent");
+                document.dispatchEvent(myEvent);
+
+                if (captureOffScreen) {
+                    var found = false;
+                    for (var i = 0; i < window.__SPECTOR_Canvases.length; i++) {
+                        if (window.__SPECTOR_Canvases[i] === this) {
+                            found = true;
+                            break;
+                        }
+                    }
+                    if (!found) {
+                        window.__SPECTOR_Canvases.push(this);
+                    }
+                }
+
+                if (captureOnLoad) {
+                    // Ensures canvas is in the dom to capture the one we are currently tracking.
+                    if (this.parentElement || false) {
+                        spector.captureContext(context, 500, false, false);
+                        captureOnLoad = false;
+                    }
+                }
+            }
+
+            return context;
+        }
+    })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>报告验证</title>
+    
+    <style type="text/css">
+        .td-header
+        {
+            text-align: left;
+            border: solid 1px #C5D7ED;
+            width: 120px;
+            line-height: 60px;
+            height: 35px;
+			font-size:25px;
+			font-weight:bolder;
+        }
+        .td-content
+        {
+            text-align: left;
+            border: solid 1px #C5D7ED;
+            line-height: 30px;
+            height: 35px;
+			font-size:20px;
+        }
+    </style>
+    <script type="text/javascript">
+    </script>
+</head>
+<body>
+    <center>
+        <table style="border: solid 1px #C5D7ED; width: 600px;">
+            <tbody><tr>
+                <th colspan="2" style="background-color: #F1F7FC; line-height: 50px; height: 50px;font-size:30px;">
+                    报告信息
+                </th>
+            </tr>
+            <tr><td class="td-header">报告编号</td><td class="td-content">JN2020FM0050</td></tr>
+<tr><td class="td-header">委托单位</td><td class="td-content">浙江春天门业有限公司</td></tr>
+<tr><td class="td-header">委托日期</td><td class="td-content">2020年05月22日</td></tr>
+<tr><td class="td-header">来样日期</td><td class="td-content">2020年05月22日</td></tr>
+<tr><td class="td-header">样品名称</td><td class="td-content">三防门（丙级单门）</td></tr>
+<tr><td class="td-header">型号规格</td><td class="td-content">950mm×2050mm×68mm</td></tr>
+<tr><td class="td-header">生产单位</td><td class="td-content">浙江春天门业有限公司</td></tr>
+<tr><td class="td-header">检验依据</td><td class="td-content">GB/T 8484-2008《建筑外门窗保温性能分级及检测方法》
+GB/T 8485-2008《建筑门窗空气声隔声性能分级及检测方法》
+GB 17565-2007《防盗安全门通用技术条件》</td></tr>
+<tr><td class="td-header">检测项目</td><td class="td-content">传热系数, 空气声隔声性能,外观,永久性标记,板材及材质,尺寸公差与配合间隙,防破坏性能,防闯入性能,软冲击性能,悬端吊重性能,撞击障碍物性能,铰链转动性能,锁具要求</td></tr>
+<tr><td class="td-header">检测结论</td><td class="td-content">　　该样品经检测，传热系数K=1.7 W/()，保温性能7级；空气声计权隔声量和频谱修正量Rw（C; Ctr）= 33(-1;-2) dB，作为外门空气声隔声性能为3级，作为内门空气声隔声性能为3级；其余所检项目符合GB 17565-2007《防盗安全门通用技术条件》标准中丙级防盗门的指标要求。</td></tr>
+<tr><td class="td-header">签发日期</td><td class="td-content">2020/7/10 0:00:00</td></tr>
+<tr><td class="td-header">检验单位</td><td class="td-content">国家建筑材料工业建筑五金水暖产品质量监督检验测试中心</td></tr>
+<tr><td class="td-header">事业部</td><td class="td-content">门窗幕墙检测部</td></tr>
+<tr><td class="td-header">网址</td><td class="td-content"><a href="http://www.bmtbj.cn/">http://www.bmtbj.cn/</a></td></tr>
+<tr><td class="td-header">客服电话</td><td class="td-content">010-88724984 / 88749821</td></tr>
+<tr><td class="td-header">地址</td><td class="td-content">北京市石景山区金顶北路69号</td></tr>
+
+        </tbody></table>
+    </center>
+    <script type="text/javascript" src="./报告验证_files/Base64.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var url = window.location.href;
+            var index = url.lastIndexOf("/");
+            var ecode_htmlName = url.substr(index + 1, url.length);
+            var sno = base64decode(ecode_htmlName.replace(".html", ""));
+            var querystr = "?sno=" + encodeURIComponent(sno);
+            var xhr = createXmlHttp();
+            xhr.open("GET", "http://www.bmtbj.cn/clientcenter/Server/QRHandler.ashx" + querystr, true);
+            xhr.setRequestHeader("If-Modified-Since", "0");
+            xhr.send(null);
+        };
+        function createXmlHttp() {//创建xhr对象
+            var xhobj = false;
+            try {
+                xhobj = new ActiveXObject("Msxml2.XMLHTTP"); // ie msxml3.0+
+            } catch (e) {
+                try {
+                    xhobj = new ActiveXObject("Microsoft.XMLHTTP"); //ie msxml2.6
+                } catch (e2) {
+                    xhobj = false;
+                }
+            }
+            if (!xhobj && typeof XMLHttpRequest != 'undefined') {// Firefox, Opera 8.0+, Safari
+                xhobj = new XMLHttpRequest();
+            }
+            return xhobj;
+        }
+    </script>
+
+
+
+</body></html>
